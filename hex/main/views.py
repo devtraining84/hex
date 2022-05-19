@@ -27,7 +27,7 @@ class LoginView(View):
                 login(request, user)
                 return redirect('start/')
             else:
-                text = 'Nieudane logowanie !'
+                text = 'login failed !'
         return render(
             request,
             'login.html',
